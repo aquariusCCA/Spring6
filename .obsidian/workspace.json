@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring6/Spring6 課程描述.md",
+                "file": "Spring6 課程描述.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Spring6 課程描述"
             }
-          },
-          {
-            "id": "bbb4d4caced53104",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spring6/基于XML管理Bean/Bean的作用域.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Bean的作用域"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring6/基于XML管理Bean/Bean的作用域.md",
+                "file": "Spring6 課程描述.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Bean的作用域 的大纲"
+              "title": "Spring6 課程描述 的大纲"
             }
           },
           {
@@ -171,8 +156,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           }
         ],
@@ -195,8 +180,28 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "bbb4d4caced53104",
+  "active": "2c2524fc24a1fa2e",
   "lastOpenFiles": [
+    "基于注解管理Bean/@Resource注入.md",
+    "Spring6 課程描述.md",
+    "基于注解管理Bean/@Autowired注入.md",
+    "基于注解管理Bean/附件/1755064663768_CIoyvZWrfD.png",
+    "基于XML管理Bean/附件/1755064663768_CIoyvZWrfD.png",
+    "基于注解管理Bean/使用注解定义bean.md",
+    "基于注解管理Bean/开启组件扫描.md",
+    "基于注解管理Bean/创建子模块.md",
+    "基于注解管理Bean/基于注解管理Bean.md",
+    "基于XML管理Bean/基于xml自动装配.md",
+    "基于注解管理Bean/附件",
+    "基于注解管理Bean",
+    "基于XML管理Bean/附件/1755064663761_2EslOMpGSW.png",
+    "基于XML管理Bean/FactoryBean.md",
+    "基于XML管理Bean/附件/1755061827214_gbiZRCo9V8.png",
+    "基于XML管理Bean/Bean生命周期.md",
+    "基于XML管理Bean/附件/1755061827214_zWMcLomtoE.png",
+    "基于XML管理Bean/附件/1755061827214_KQkFMISII2.png",
+    "基于XML管理Bean/附件/1755061827214_gIO2Ipik2N.png",
+    "基于XML管理Bean/Bean的作用域.md",
     "Spring6/基于XML管理Bean/附件/1755061827206_wUUm7ak85R.png",
     "Spring6/Spring6 課程描述.md",
     "Spring6/基于XML管理Bean/Bean的作用域.md",
@@ -214,35 +219,15 @@
     "Spring6/基于XML管理Bean/构造器注入.md",
     "Spring6/基于XML管理Bean/附件/1755055129036_67oL2QzWXf.png",
     "Spring6/基于XML管理Bean/Set注入.md",
-    "Spring6/基于XML管理Bean/附件/1755055129036_uHwEJcqk4H.png",
     "Spring6/基于XML管理Bean/依赖注入.md",
-    "Spring6/IoC 容器/依赖注入概述.md",
-    "Spring6/基于XML管理Bean/附件/1755055129036_i2zuyCa4pl.png",
-    "Spring6/基于XML管理Bean/附件/1755055129030_J4pTfGE51K.png",
     "Spring6/基于XML管理Bean/附件",
     "Spring6/基于XML管理Bean/未命名檔案夾",
-    "Spring6/基于XML管理Bean/基于XML管理Bean.md",
     "Spring6/基于XML管理Bean",
-    "Spring6/IoC 容器/IoC容器在Spring中的实现.md",
-    "Spring6/IoC 容器/附件/1755051607445_01L9YB4zPC.png",
-    "Spring6/IoC 容器/附件/1755051607445_OIKDhOpsuq.png",
-    "Spring6/IoC 容器/附件/1755051607445_AN6FgaNBkm.png",
-    "Spring6/IoC 容器/IoC 控制反转.md",
-    "Spring6/IoC 容器/附件/1755051607445_S5Nhdh1BO9.png",
     "Spring6/IoC 容器/附件",
     "Spring6/IoC 容器/未命名檔案夾",
-    "Spring6/IoC 容器/IoC 容器.md",
     "Spring6/IoC 容器",
-    "Spring6/Spring入门/启用日志框架.md",
-    "Spring6/Spring入门/附件/0ae46c93d27d4f11c9685742a3cde09e.png",
-    "Spring6/Spring入门/原理.md",
-    "Spring6/Spring入门/入门案例开发.md",
     "Spring6/Spring入门/附件",
     "Spring6/Spring入门/未命名檔案夾",
-    "Spring6/Spring入门/Spring入门.md",
-    "Spring6/Spring入门/入门案例开发步骤.md",
-    "Spring6/Spring入门",
-    "Spring6/Spring 概述/附件",
     "未命名 2.canvas",
     "未命名.canvas"
   ]
