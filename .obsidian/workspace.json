@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Spring6 課程描述"
             }
+          },
+          {
+            "id": "522bd07e93a1b337",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "原理手写 IoC/原理手写 IoC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "原理手写 IoC"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring6 課程描述.md",
+                "file": "原理手写 IoC/原理手写 IoC.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Spring6 課程描述 的大纲"
+              "title": "原理手写 IoC 的大纲"
             }
           },
           {
@@ -180,10 +195,15 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "2c2524fc24a1fa2e",
+  "active": "522bd07e93a1b337",
   "lastOpenFiles": [
-    "基于注解管理Bean/@Resource注入.md",
+    "原理手写 IoC/附件",
+    "原理手写 IoC/原理手写 IoC.md",
     "Spring6 課程描述.md",
+    "原理手写 IoC",
+    "基于注解管理Bean/Spring全注解开发.md",
+    "基于注解管理Bean/附件/1755064663768_uBXTnpLXzB.png",
+    "基于注解管理Bean/@Resource注入.md",
     "基于注解管理Bean/@Autowired注入.md",
     "基于注解管理Bean/附件/1755064663768_CIoyvZWrfD.png",
     "基于XML管理Bean/附件/1755064663768_CIoyvZWrfD.png",
@@ -216,10 +236,6 @@
     "Spring6/基于XML管理Bean/对象类型属性赋值.md",
     "Spring6/基于XML管理Bean/特殊值赋值.md",
     "Spring6/基于XML管理Bean/获取 bean.md",
-    "Spring6/基于XML管理Bean/构造器注入.md",
-    "Spring6/基于XML管理Bean/附件/1755055129036_67oL2QzWXf.png",
-    "Spring6/基于XML管理Bean/Set注入.md",
-    "Spring6/基于XML管理Bean/依赖注入.md",
     "Spring6/基于XML管理Bean/附件",
     "Spring6/基于XML管理Bean/未命名檔案夾",
     "Spring6/基于XML管理Bean",
@@ -227,7 +243,6 @@
     "Spring6/IoC 容器/未命名檔案夾",
     "Spring6/IoC 容器",
     "Spring6/Spring入门/附件",
-    "Spring6/Spring入门/未命名檔案夾",
     "未命名 2.canvas",
     "未命名.canvas"
   ]
