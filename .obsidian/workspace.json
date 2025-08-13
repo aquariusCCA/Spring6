@@ -22,21 +22,20 @@
             }
           },
           {
-            "id": "522bd07e93a1b337",
+            "id": "c45bd1719228d535",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "原理手写 IoC/原理手写 IoC.md",
+                "file": "面向切面 AOP/AOP 概念.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "原理手写 IoC"
+              "title": "AOP 概念"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "原理手写 IoC/原理手写 IoC.md",
+                "file": "Spring6 課程描述.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "原理手写 IoC 的大纲"
+              "title": "Spring6 課程描述 的大纲"
             }
           },
           {
@@ -195,54 +194,54 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "522bd07e93a1b337",
+  "active": "2c2524fc24a1fa2e",
   "lastOpenFiles": [
-    "原理手写 IoC/附件",
-    "原理手写 IoC/原理手写 IoC.md",
+    "基于XML管理Bean/引入外部属性文件.md",
     "Spring6 課程描述.md",
+    "基于XML管理Bean/对象类型属性赋值.md",
+    "基于XML管理Bean/特殊值赋值.md",
+    "面向切面 AOP/AOP 概念.md",
+    "面向切面 AOP/切入点.md",
+    "面向切面 AOP/连接点.md",
+    "面向切面 AOP/代理.md",
+    "面向切面 AOP/目标.md",
+    "面向切面 AOP/切面.md",
+    "面向切面 AOP/通知（增强）.md",
+    "面向切面 AOP/横切关注点.md",
+    "面向切面 AOP/AOP 作用.md",
+    "基于注解管理Bean/创建子模块.md",
+    "面向切面 AOP/附件/1755076387823_r7x9rAztdu.png",
+    "面向切面 AOP/附件/1755076387816_n1yVWbnPku.png",
+    "面向切面 AOP/附件/1755075724948_h3mRam5CeM.png",
+    "面向切面 AOP/附件/1755075724948_BKogJ3P2Si.png",
+    "面向切面 AOP/动态代理.md",
+    "面向切面 AOP/附件/1755075724948_6SHocQa6gQ.png",
+    "面向切面 AOP/附件/1755075724948_HzoCPluRO8.png",
+    "面向切面 AOP/附件/1755075724941_GXigneacBQ.png",
+    "面向切面 AOP/静态代理.md",
+    "面向切面 AOP/代理模式.md",
+    "面向切面 AOP/附件/1755064663768_NoqIUJ6L3B.png",
+    "面向切面 AOP/附件/1755064663768_wxhsUvql7U.png",
+    "面向切面 AOP/场景模拟.md",
+    "面向切面 AOP/附件",
+    "面向切面 AOP",
+    "原理手写 IoC/原理手写 IoC.md",
+    "原理手写 IoC/附件",
     "原理手写 IoC",
     "基于注解管理Bean/Spring全注解开发.md",
     "基于注解管理Bean/附件/1755064663768_uBXTnpLXzB.png",
     "基于注解管理Bean/@Resource注入.md",
     "基于注解管理Bean/@Autowired注入.md",
-    "基于注解管理Bean/附件/1755064663768_CIoyvZWrfD.png",
-    "基于XML管理Bean/附件/1755064663768_CIoyvZWrfD.png",
     "基于注解管理Bean/使用注解定义bean.md",
     "基于注解管理Bean/开启组件扫描.md",
-    "基于注解管理Bean/创建子模块.md",
     "基于注解管理Bean/基于注解管理Bean.md",
     "基于XML管理Bean/基于xml自动装配.md",
     "基于注解管理Bean/附件",
     "基于注解管理Bean",
-    "基于XML管理Bean/附件/1755064663761_2EslOMpGSW.png",
-    "基于XML管理Bean/FactoryBean.md",
-    "基于XML管理Bean/附件/1755061827214_gbiZRCo9V8.png",
-    "基于XML管理Bean/Bean生命周期.md",
-    "基于XML管理Bean/附件/1755061827214_zWMcLomtoE.png",
-    "基于XML管理Bean/附件/1755061827214_KQkFMISII2.png",
-    "基于XML管理Bean/附件/1755061827214_gIO2Ipik2N.png",
-    "基于XML管理Bean/Bean的作用域.md",
-    "Spring6/基于XML管理Bean/附件/1755061827206_wUUm7ak85R.png",
-    "Spring6/Spring6 課程描述.md",
-    "Spring6/基于XML管理Bean/Bean的作用域.md",
-    "設計模式/設計模式課程描述.md",
-    "Spring6/基于XML管理Bean/引入外部属性文件.md",
-    "Spring6/基于XML管理Bean/附件/1755055129036_zkUxKb3tk3.png",
-    "Maven/Maven 課程描述.md",
-    "Spring6/基于XML管理Bean/P命名空间.md",
-    "Spring6/基于XML管理Bean/集合类型属性赋值.md",
-    "Spring6/基于XML管理Bean/List 集合.md",
-    "Spring6/基于XML管理Bean/数组类型属性赋值.md",
-    "Spring6/基于XML管理Bean/对象类型属性赋值.md",
-    "Spring6/基于XML管理Bean/特殊值赋值.md",
-    "Spring6/基于XML管理Bean/获取 bean.md",
     "Spring6/基于XML管理Bean/附件",
     "Spring6/基于XML管理Bean/未命名檔案夾",
     "Spring6/基于XML管理Bean",
     "Spring6/IoC 容器/附件",
-    "Spring6/IoC 容器/未命名檔案夾",
-    "Spring6/IoC 容器",
-    "Spring6/Spring入门/附件",
     "未命名 2.canvas",
     "未命名.canvas"
   ]
