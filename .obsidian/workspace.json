@@ -22,20 +22,49 @@
             }
           },
           {
-            "id": "c45bd1719228d535",
+            "id": "8d084219806b3cbb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "面向切面 AOP/AOP 概念.md",
+                "file": "国际化 i18n/Spring6 国际化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AOP 概念"
+              "title": "Spring6 国际化"
+            }
+          },
+          {
+            "id": "adb3f62e8464dd19",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "補充/Spring 系列之国际化详解.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spring 系列之国际化详解"
+            }
+          },
+          {
+            "id": "a485e0dfcc90d212",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "国际化 i18n/Java 国际化.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Java 国际化"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 348.5
+    "width": 352.5
   },
   "right": {
     "id": "844e01e034b13068",
@@ -108,6 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "補充/Spring 系列之国际化详解.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "Spring 系列之国际化详解 的反向链接列表"
             }
           },
           {
@@ -126,12 +156,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "設計模式/課件/軟件設計原則.md",
+                "file": "補充/Spring 系列之国际化详解.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "軟件設計原則 的出链列表"
+              "title": "Spring 系列之国际化详解 的出链列表"
             }
           },
           {
@@ -155,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring6 課程描述.md",
+                "file": "補充/Spring 系列之国际化详解.md",
                 "followCursor": false,
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Spring6 課程描述 的大纲"
+              "title": "Spring 系列之国际化详解 的大纲"
             }
           },
           {
@@ -194,54 +224,54 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "2c2524fc24a1fa2e",
+  "active": "adb3f62e8464dd19",
   "lastOpenFiles": [
-    "基于XML管理Bean/引入外部属性文件.md",
+    "国际化 i18n/Java 国际化.md",
+    "補充/Spring 系列之国际化详解.md",
+    "国际化 i18n/Spring6 国际化.md",
+    "補充/Spring 系列之国际化详解.md",
     "Spring6 課程描述.md",
-    "基于XML管理Bean/对象类型属性赋值.md",
-    "基于XML管理Bean/特殊值赋值.md",
-    "面向切面 AOP/AOP 概念.md",
-    "面向切面 AOP/切入点.md",
-    "面向切面 AOP/连接点.md",
-    "面向切面 AOP/代理.md",
-    "面向切面 AOP/目标.md",
-    "面向切面 AOP/切面.md",
-    "面向切面 AOP/通知（增强）.md",
-    "面向切面 AOP/横切关注点.md",
-    "面向切面 AOP/AOP 作用.md",
-    "基于注解管理Bean/创建子模块.md",
-    "面向切面 AOP/附件/1755076387823_r7x9rAztdu.png",
-    "面向切面 AOP/附件/1755076387816_n1yVWbnPku.png",
-    "面向切面 AOP/附件/1755075724948_h3mRam5CeM.png",
-    "面向切面 AOP/附件/1755075724948_BKogJ3P2Si.png",
-    "面向切面 AOP/动态代理.md",
-    "面向切面 AOP/附件/1755075724948_6SHocQa6gQ.png",
-    "面向切面 AOP/附件/1755075724948_HzoCPluRO8.png",
-    "面向切面 AOP/附件/1755075724941_GXigneacBQ.png",
-    "面向切面 AOP/静态代理.md",
-    "面向切面 AOP/代理模式.md",
-    "面向切面 AOP/附件/1755064663768_NoqIUJ6L3B.png",
-    "面向切面 AOP/附件/1755064663768_wxhsUvql7U.png",
-    "面向切面 AOP/场景模拟.md",
-    "面向切面 AOP/附件",
-    "面向切面 AOP",
-    "原理手写 IoC/原理手写 IoC.md",
-    "原理手写 IoC/附件",
-    "原理手写 IoC",
-    "基于注解管理Bean/Spring全注解开发.md",
-    "基于注解管理Bean/附件/1755064663768_uBXTnpLXzB.png",
-    "基于注解管理Bean/@Resource注入.md",
-    "基于注解管理Bean/@Autowired注入.md",
-    "基于注解管理Bean/使用注解定义bean.md",
-    "基于注解管理Bean/开启组件扫描.md",
-    "基于注解管理Bean/基于注解管理Bean.md",
-    "基于XML管理Bean/基于xml自动装配.md",
-    "基于注解管理Bean/附件",
-    "基于注解管理Bean",
-    "Spring6/基于XML管理Bean/附件",
-    "Spring6/基于XML管理Bean/未命名檔案夾",
-    "Spring6/基于XML管理Bean",
-    "Spring6/IoC 容器/附件",
+    "補充/常见国家、地区的语言编码.md",
+    "国际化 i18n/i18n 概述.md",
+    "国际化 i18n/附件/55227fde28dc08a69bc93adb5877c4b3.png",
+    "国际化 i18n/附件/1755157154411_1yuinbccem.png",
+    "国际化 i18n/附件/1755137210515_KiEbbDNokJ.png",
+    "国际化 i18n/附件/db240cba0c1c67d37574fd84180ce0b8.png",
+    "国际化 i18n/附件",
+    "国际化 i18n/未命名檔案夾",
+    "国际化 i18n",
+    "资源操作/Resources 概述.md",
+    "资源操作",
+    "事务/基于XML的声明式事务.md",
+    "事务/全注解配置事务.md",
+    "事务/底层原理.md",
+    "補充/@Transactional 实现原理.md",
+    "補充/附件/1363214-20181209182520523-539178551.png",
+    "事务/附件/1755137210515_5DRT0MIpdc.png",
+    "事务/事务属性：传播行为.md",
+    "補充/Spring 事務的 7 種傳播行為.md",
+    "事务/事务属性：隔离级别.md",
+    "事务/事务属性：回滚策略.md",
+    "事务/事务属性：超时.md",
+    "事务/事务属性：只读.md",
+    "事务/@Transactional注解标识的位置.md",
+    "事务/声明式事务.md",
+    "事务/加入事务.md",
+    "事务/声明式事务的准备工作.md",
+    "事务/测试无事务情况.md",
+    "事务/附件/1755137210515_aiovHVs4NX.png",
+    "事务/JdbcTemplate.md",
+    "事务/附件/1755137210515_DsyZwnnG4d.png",
+    "事务/附件",
+    "事务/未命名檔案夾",
+    "面向切面 AOP/切面的优先级.md",
+    "事务/基于注解的声明式事务.md",
+    "事务",
+    "单元测试 JUnit",
+    "補充/附件/1295651-20220321134352389-1171205370.png",
+    "補充/附件/1295651-20220321134352045-335833014.jpg",
+    "補充/附件",
+    "補充/未命名檔案夾",
     "未命名 2.canvas",
     "未命名.canvas"
   ]
