@@ -284,7 +284,213 @@ public void test3() throws InterruptedException {
 
 ---
 
-# 国际化信息存在db中 從這開始
+# 国际化信息存在db中
+
+上面我们介绍了一个类：StaticMessageSource，这个类它允许通过编程的方式提供国际化信息，我们通过这个类来实现从db中获取国际化信息的功能。
+
+这个类中有2个方法比较重要：
+
+```java
+public void addMessage(String code, Locale locale, String msg);
+public void addMessages(Map<String, String> messages, Locale locale);
+```
+
+通过这两个方法来添加国际化配置信息。
+
+下面来看案例
+
+自定义一个 StaticMessageSource 类
+
+```java
+public class MessageSourceFromDb extends StaticMessageSource implements InitializingBean {  
+    @Override  
+    public void afterPropertiesSet() throws Exception {  
+        //此处我们在当前bean初始化之后，模拟从db中获取国际化信息，然后调用addMessage来配置国际化信息  
+        this.addMessage("desc", Locale.CHINA, "我是从db来的信息");  
+        this.addMessage("desc", Locale.UK, "MessageSource From Db");  
+    }  
+}
+```
+
+> 上面的类实现了 spring 的 InitializingBean 接口，重写了接口中干掉 afterPropertiesSet 方法，这个方法会在当前 bean 初始化之后调用，在这个方法中模拟从 db 中获取国际化信息，然后调用 addMessage 来配置国际化信息
+
+来个 spring 配置类，将 MessageSourceFromDb 注册到 spring 容器
+
+```java
+@Configuration  
+public class MainConfig2 {  
+    @Bean  
+    public MessageSource messageSource(){  
+        return new MessageSourceFromDb();  
+    }  
+}
+```
+
+测试用例
+
+```java
+@Test  
+public void test4(){  
+    AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();  
+    context.register(MainConfig2.class);  
+    context.refresh();  
+    System.out.println(context.getMessage("desc", null, Locale.CHINA));  
+    System.out.println(context.getMessage("desc", null, Locale.UK));  
+}
+```
+
+运行输出
+
+```shell
+我是从db来的信息
+MessageSource From Db
+```
+
+---
+
+# bean 名称为什么必须是 messageSource
+
+> 上面我容器启动的时候会调用`refresh`方法，过程如下：
+
+```shell
+org.springframework.context.support.AbstractApplicationContext#refresh
+内部会调用
+org.springframework.context.support.AbstractApplicationContext#initMessageSource
+这个方法用来初始化MessageSource,方法内部会查找当前容器中是否有messageSource名称的bean，如果有就将其作为处理国际化的对象
+如果没有找到，此时会注册一个名称为messageSource的MessageSource
+```
+
+---
+
+# 自定义 bean 中使用国际化
+
+自定义的 bean 如果想使用国际化，比较简单，只需实现下面这个接口，spring 容器会自动调用这个方法，将 MessageSource 注入，然后我们就可以使用 MessageSource 获取国际化信息了。
+
+```java
+public interface MessageSourceAware extends Aware {
+    void setMessageSource(MessageSource messageSource);
+}
+```
+
+## 1. 建立國際化資源檔
+
+建立以下檔案（放在 `src/main/resources` 目錄下）：
+
+**messages.properties（預設英文）**
+
+```properties
+greeting=Hello, {0}!
+```
+
+**messages\_zh\_TW\.properties（繁體中文）**
+
+```properties
+greeting=哈囉，{0}！
+```
+
+## 2. Spring 設定檔（Java Config）
+
+```java
+import org.springframework.context.MessageSource;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ResourceBundleMessageSource;
+
+@Configuration
+public class AppConfig {
+
+    @Bean
+    public MessageSource messageSource() {
+        ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
+        // 指定檔案基礎名稱，不包含副檔名
+        messageSource.setBasename("messages");
+        messageSource.setDefaultEncoding("UTF-8");
+        messageSource.setDefaultLocale(Locale.ENGLISH); // 不指定時一律走英文
+        return messageSource;
+    }
+
+    @Bean
+    public MyService myService() {
+        return new MyService();
+    }
+}
+```
+
+## 3. 自訂 Bean 實作 `MessageSourceAware`
+
+```java
+import org.springframework.context.MessageSource;
+import org.springframework.context.MessageSourceAware;
+import org.springframework.stereotype.Component;
+
+import java.util.Locale;
+
+public class MyService implements MessageSourceAware {
+
+    private MessageSource messageSource;
+
+    // Spring 啟動時會自動調用這個方法注入 MessageSource
+    @Override
+    public void setMessageSource(MessageSource messageSource) {
+        this.messageSource = messageSource;
+    }
+
+    public void sayHello(String name, Locale locale) {
+        String message = messageSource.getMessage("greeting", new Object[]{name}, locale);
+        System.out.println(message);
+    }
+}
+```
+
+## 4. 測試程式
+
+```java
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.util.Locale;
+
+public class MainApp {
+    public static void main(String[] args) {
+        AnnotationConfigApplicationContext context =
+                new AnnotationConfigApplicationContext(AppConfig.class);
+
+        MyService myService = context.getBean(MyService.class);
+
+        // 英文
+        myService.sayHello("John", Locale.ENGLISH);
+
+        // 繁體中文
+        myService.sayHello("小明", Locale.TAIWAN);
+
+        context.close();
+    }
+}
+```
+
+## 5. 執行結果
+
+```
+Hello, John!
+哈囉，小明！
+```
+
+## 6. 關鍵解釋
+
+1. **`MessageSourceAware` 的角色**
+
+   * 這是一個 Spring **Aware** 介面，類似於 `ApplicationContextAware`。
+   * Spring 容器會在 Bean 初始化階段自動呼叫 `setMessageSource(...)` 把系統的 `MessageSource` 實例注入。
+   * 這樣你的 Bean 不用自己去 `@Autowired` 或從 `ApplicationContext` 手動抓取。
+
+2. **`MessageSource` 的用途**
+
+   * 它負責讀取國際化資源檔 (`*.properties`) 並根據 `Locale` 回傳對應的訊息。
+   * 你用 `getMessage(key, args, locale)` 就可以取得翻譯文字。
+
+3. **優勢**
+
+   * 讓自定義 Bean 脫離 `ApplicationContext` 的依賴，直接專注於訊息處理。
+   * 可在非 Web 環境、非 Controller 的地方輕鬆取得國際化訊息。
 
 
 ---
