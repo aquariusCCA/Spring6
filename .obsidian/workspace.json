@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c0d1bcfb8908cde4",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "2c2524fc24a1fa2e",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,45 +22,31 @@
             }
           },
           {
-            "id": "8d084219806b3cbb",
+            "id": "b379288704a6c9ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "国际化 i18n/Spring6 国际化.md",
+                "file": "数据校验/基于方法实现校验.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spring6 国际化"
+              "title": "基于方法实现校验"
             }
           },
           {
-            "id": "adb3f62e8464dd19",
+            "id": "8cecbcdf3e059c0a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "補充/Spring 系列之国际化详解.md",
+                "file": "数据校验/实现自定义校验.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spring 系列之国际化详解"
-            }
-          },
-          {
-            "id": "a485e0dfcc90d212",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "国际化 i18n/Java 国际化.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Java 国际化"
+              "title": "实现自定义校验"
             }
           }
         ],
@@ -96,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "创建 Web 模块工程",
+                "query": "@Configuration",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "補充/Spring 系列之国际化详解.md",
+                "file": "资源操作/ByteArrayResource.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Spring 系列之国际化详解 的反向链接列表"
+              "title": "ByteArrayResource 的反向链接列表"
             }
           },
           {
@@ -156,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "補充/Spring 系列之国际化详解.md",
+                "file": "资源操作/ByteArrayResource.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Spring 系列之国际化详解 的出链列表"
+              "title": "ByteArrayResource 的出链列表"
             }
           },
           {
@@ -185,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "補充/Spring 系列之国际化详解.md",
+                "file": "数据校验/实现自定义校验.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Spring 系列之国际化详解 的大纲"
+              "title": "实现自定义校验 的大纲"
             }
           },
           {
@@ -224,15 +210,40 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "adb3f62e8464dd19",
+  "active": "8cecbcdf3e059c0a",
   "lastOpenFiles": [
-    "国际化 i18n/Java 国际化.md",
-    "補充/Spring 系列之国际化详解.md",
-    "国际化 i18n/Spring6 国际化.md",
-    "補充/Spring 系列之国际化详解.md",
+    "数据校验/基于方法实现校验.md",
     "Spring6 課程描述.md",
-    "補充/常见国家、地区的语言编码.md",
-    "国际化 i18n/i18n 概述.md",
+    "数据校验/实现自定义校验.md",
+    "数据校验/通过 Validator 接口实现.md",
+    "数据校验/数据校验.md",
+    "基于注解管理Bean/基于注解管理Bean.md",
+    "基于注解管理Bean/Spring全注解开发.md",
+    "事务/全注解配置事务.md",
+    "数据校验/Bean Validation 注解实现.md",
+    "数据校验",
+    "资源操作/使用三：通配符其他使用.md",
+    "资源操作/实验二：classpath 通配符使用.md",
+    "资源操作/实验一：classpath 前缀使用.md",
+    "资源操作/ApplicationContext 实现类指定访问策略.md",
+    "资源操作/应用程序上下文和资源路径.md",
+    "资源操作/使用 Resource 作为属性.md",
+    "资源操作/ResourceLoader 概述.md",
+    "资源操作/实验：演示ResourceLoaderAware使用.md",
+    "资源操作/ResourceLoader 基本用例.md",
+    "资源操作/ResourceLoaderAware 作用.md",
+    "资源操作/ResourceLoaderAware 含义.md",
+    "资源操作/ResourceLoaderAware 接口.md",
+    "资源操作/ResourceLoader 总结.md",
+    "资源操作/实验一：ClassPathXmlApplicationContext 获取Resource 实例.md",
+    "资源操作/实验二：FileSystemApplicationContext 获取 Resource 实例.md",
+    "资源操作/ByteArrayResource.md",
+    "资源操作/InputStreamResource.md",
+    "资源操作/附件/1755157154417_v4GnayiSd9.png",
+    "资源操作/附件/1755157154417_Dii5JjgoBY.png",
+    "资源操作/附件/1755157154417_1X2xSYR9fd.png",
+    "资源操作/附件",
+    "资源操作/未命名檔案夾",
     "国际化 i18n/附件/55227fde28dc08a69bc93adb5877c4b3.png",
     "国际化 i18n/附件/1755157154411_1yuinbccem.png",
     "国际化 i18n/附件/1755137210515_KiEbbDNokJ.png",
@@ -240,38 +251,13 @@
     "国际化 i18n/附件",
     "国际化 i18n/未命名檔案夾",
     "国际化 i18n",
-    "资源操作/Resources 概述.md",
     "资源操作",
-    "事务/基于XML的声明式事务.md",
-    "事务/全注解配置事务.md",
-    "事务/底层原理.md",
-    "補充/@Transactional 实现原理.md",
     "補充/附件/1363214-20181209182520523-539178551.png",
     "事务/附件/1755137210515_5DRT0MIpdc.png",
-    "事务/事务属性：传播行为.md",
-    "補充/Spring 事務的 7 種傳播行為.md",
-    "事务/事务属性：隔离级别.md",
-    "事务/事务属性：回滚策略.md",
-    "事务/事务属性：超时.md",
-    "事务/事务属性：只读.md",
-    "事务/@Transactional注解标识的位置.md",
-    "事务/声明式事务.md",
-    "事务/加入事务.md",
-    "事务/声明式事务的准备工作.md",
-    "事务/测试无事务情况.md",
     "事务/附件/1755137210515_aiovHVs4NX.png",
-    "事务/JdbcTemplate.md",
-    "事务/附件/1755137210515_DsyZwnnG4d.png",
     "事务/附件",
     "事务/未命名檔案夾",
-    "面向切面 AOP/切面的优先级.md",
-    "事务/基于注解的声明式事务.md",
     "事务",
-    "单元测试 JUnit",
-    "補充/附件/1295651-20220321134352389-1171205370.png",
-    "補充/附件/1295651-20220321134352045-335833014.jpg",
-    "補充/附件",
-    "補充/未命名檔案夾",
     "未命名 2.canvas",
     "未命名.canvas"
   ]
