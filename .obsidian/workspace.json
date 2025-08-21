@@ -49,8 +49,7 @@
               "title": "实现自定义校验"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "数据校验/实现自定义校验.md",
+                "file": "Spring6 課程描述.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "实现自定义校验 的大纲"
+              "title": "Spring6 課程描述 的大纲"
             }
           },
           {
@@ -210,11 +209,11 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "8cecbcdf3e059c0a",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "数据校验/实现自定义校验.md",
     "数据校验/基于方法实现校验.md",
     "Spring6 課程描述.md",
-    "数据校验/实现自定义校验.md",
     "数据校验/通过 Validator 接口实现.md",
     "数据校验/数据校验.md",
     "基于注解管理Bean/基于注解管理Bean.md",
